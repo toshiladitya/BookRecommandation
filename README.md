@@ -37,12 +37,14 @@ The Book Recommendation Project is a Django-based web application that integrate
 - bash
 - Copy code
 - venv\Scripts\activate
-- On macOS/Linux:
+- 
+## On macOS/Linux:
 
 - bash
 - Copy code
 - source venv/bin/activate
-- Install Dependencies:
+  
+# Install Dependencies:
 
 - bash
 - Copy code
@@ -65,7 +67,7 @@ The Book Recommendation Project is a Django-based web application that integrate
 
 # Lists all books in the database.
 
-# Response:
+- Response:
 
 - json
 - Copy code
@@ -84,14 +86,14 @@ The Book Recommendation Project is a Django-based web application that integrate
 
 - Fetches books from the Google Books API and adds them to the database. Requires a JSON payload with the key "query" for search terms.
 
-# Request:
+- Request:
 
 - json
 - Copy code
 {
   "query": "Python programming"
 }
-# Response:
+- Response:
 
 - json
 - Copy code
@@ -111,7 +113,7 @@ The Book Recommendation Project is a Django-based web application that integrate
 
 ## Lists all recommendations.
 
-# Response:
+- Response:
 
 - json
 - Copy code
@@ -129,7 +131,7 @@ The Book Recommendation Project is a Django-based web application that integrate
 
 - Creates a new recommendation. Requires a JSON payload with details of the recommendation.
 
-# Request:
+- Request:
 
 - json
 - Copy code
@@ -138,8 +140,10 @@ The Book Recommendation Project is a Django-based web application that integrate
   "user": "Alice",
   "comment": "Great book for learning Python!",
   "likes": 10
+
 }
-# Response:
+
+- Response:
 
 - json
 - Copy code
