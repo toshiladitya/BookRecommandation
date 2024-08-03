@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+</head>
+<body>
+    <h1>Book Recommendations</h1>
+    <div id="book-list"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/books/')
+                .then(response => response.json())
+                .then(data => {
+                    const bookList = document.getElementById('book-list');
+                    data.forEach(book => {
+                        const bookDiv = document.createElement('div');
+                        bookDiv.innerHTML = `<h2>${book.title}</h2><p>${book.author}</p><img src="${book.cover_image}" alt="${book.title} cover"/><p>${book.description}</p>`;
+                        bookList.appendChild(bookDiv);
+                    });
+                });
+        });
+    </script>
+</body>
+</html>
