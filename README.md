@@ -27,9 +27,8 @@ The Book Recommendation Project is a Django-based web application that integrate
 
 ## Create a Virtual Environment:
 
-- bash
-- Copy code
-- python -m venv venv
+   ```bash
+         python -m venv venv
 - Activate the Virtual Environment:
 
 ## On Windows:
