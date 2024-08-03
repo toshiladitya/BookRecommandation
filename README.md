@@ -142,7 +142,11 @@ POST /api/recommendations/
           
 ## HTML Template
 - The index.html file displays the list of books fetched from the API.
-- It uses JavaScript to fetch data from the /api/books/ endpoint and dynamically updates the page content.
+ It uses JavaScript to fetch data from the
+
+        /api/books/
+
+ endpoint and dynamically updates the page content.
 
 
 ## Acknowledgments
