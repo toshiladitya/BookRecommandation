@@ -37,7 +37,8 @@ The Book Recommendation Project is a Django-based web application that integrate
 - bash
 - Copy code
 - venv\Scripts\activate
-- 
+
+  
 ## On macOS/Linux:
 
 - bash
